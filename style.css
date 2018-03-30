@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #64C2EC;
+  --secondary-color: #BAE1F2;
+  --tertiary-color: #84DCC6;
+  --main-bg-color: #A5FFD6;
+  --grey: #fafafa;
+}
+
+body {
+  background: var(--grey);
+}
+
+#triangleForm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  height: 100%;
+}
+
+label[for="triangleSides"] {
+  color: var(--secondary-color);
+  font-size: 80px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: linear-gradient(to right,var(--secondary-color), var(--primary-color));
+  width: 20%;
+  height: 13px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/* input[type="range"]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+} */
+
+button[type="submit"] {}
+
+#result {}
