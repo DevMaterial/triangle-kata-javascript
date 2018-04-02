@@ -46,5 +46,3 @@ npm test
 ## Authors
 
 * **Travis Sanon** - *Initial work* - [DevMaterial](https://github.com/DevMaterial)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
