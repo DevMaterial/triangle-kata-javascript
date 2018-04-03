@@ -11,4 +11,15 @@ const submitHandler = (e) => {
   ranges.forEach((range) => { sides.push(range.value) });
   resultField.innerHTML = classifyTriangle(sides);
 }
+
+document.querySelectorAll('input[type=range]').forEach((input, i) => {
+  input.addEventListener('mousemove', () => {
+    updateTextInput(input.value, i);
+  })
+})
+
+let updateTextInput = (v, i) => {
+    document.querySelectorAll('p')[i].innerHTML = v;
+}
+
 triangleForm.addEventListener('submit', submitHandler);

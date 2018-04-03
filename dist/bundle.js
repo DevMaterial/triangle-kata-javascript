@@ -89,7 +89,7 @@ eval("var validateTriangle = (sides) => {\n  if (sides.length < 3) {\n      thro
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("const { classifyTriangle } = __webpack_require__(/*! ./classifyTriangle */ \"./classifyTriangle.js\");\n\nconst triangleForm = document.forms.triangleForm;\nconst resultField = document.getElementById('result');\n\nconst submitHandler = (e) => {\n  e.preventDefault();\n  const ranges = Array.from(triangleForm.querySelectorAll('input[type=range]'));\n  let sides = [];\n\n  ranges.forEach((range) => { sides.push(range.value) });\n  resultField.innerHTML = classifyTriangle(sides);\n}\ntriangleForm.addEventListener('submit', submitHandler);\n\n\n//# sourceURL=webpack:///./script.js?");
+eval("const { classifyTriangle } = __webpack_require__(/*! ./classifyTriangle */ \"./classifyTriangle.js\");\n\nconst triangleForm = document.forms.triangleForm;\nconst resultField = document.getElementById('result');\n\nconst submitHandler = (e) => {\n  e.preventDefault();\n  const ranges = Array.from(triangleForm.querySelectorAll('input[type=range]'));\n  let sides = [];\n\n  ranges.forEach((range) => { sides.push(range.value) });\n  resultField.innerHTML = classifyTriangle(sides);\n}\n\ndocument.querySelectorAll('input[type=range]').forEach((input, i) => {\n  input.addEventListener('mousemove', () => {\n    updateTextInput(input.value, i);\n  })\n})\n\nlet updateTextInput = (v, i) => {\n    document.querySelectorAll('p')[i].innerHTML = v;\n}\n\ntriangleForm.addEventListener('submit', submitHandler);\n\n\n//# sourceURL=webpack:///./script.js?");
 
 /***/ })
 
