@@ -91,7 +91,10 @@ button[type="submit"]:focus {
 #result {
   display: flex;
   justify-content: center;
-  margin: 100px 0;
-  background-color: var(--secondary-color); 
+  margin: 100px 100px;
+  background-color: var(--tertiary-color); 
   color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 80px;
 }

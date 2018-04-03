@@ -9,11 +9,11 @@ var validateTriangle = (sides) => {
 var classifyTriangle = (sides) => {
   validateTriangle(sides);
   if (sides[0] === sides[1] && sides[1] === sides[2]) {
-      return 'equilateral';
+      return 'Equilateral';
   } else if (sides[0] === sides[1] || sides[1] === sides[2] || sides[0] === sides[2]) {
-      return 'isoceles';
+      return 'Isoceles';
   }
-  return 'scalene';
+  return 'Scalene';
 }
 
 module.exports = { classifyTriangle, validateTriangle }
