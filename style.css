@@ -93,4 +93,5 @@ button[type="submit"]:focus {
   justify-content: center;
   margin: 100px 0;
   background-color: var(--secondary-color); 
+  color: #fff;
 }
